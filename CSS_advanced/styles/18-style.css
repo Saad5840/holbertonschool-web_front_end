@@ -1,10 +1,18 @@
+/* styles/18-style.css
+   - Target navbar-menu to float right
+   - Reset nav margin, padding, list-style and center text
+   - Style nav-item with custom properties for font-family, weight, size, letter-spacing, display, margin
+   - Style nav-link with display and padding
+   - Change nav-link color on hover
+*/
+
 :root {
   --nav-item-font-family: var(--font-family-title);
   --nav-item-font-weight: var(--font-weight-bold);
   --nav-item-font-size: var(--font-size-medium);
-  --nav-item-letter-spacing: 0.04rem; /* 4% of root element (1rem = 16px) */
+  --nav-item-letter-spacing: 0.04rem; /* 4% of root element */
   --nav-item-display: inline-block;
-  --nav-item-margin: 0 0 3rem 0;
+  --nav-item-margin: 0 0 3rem 0; /* bottom margin 3rem, others 0 */
   --nav-item-link-hover: var(--color-primary);
 }
 
@@ -30,7 +38,7 @@ nav .nav-item {
 
 nav .nav-link {
   display: block;
-  padding: 0.5rem 1rem; /* half root (1rem) top/bottom, full root left/right */
+  padding: 0.5rem 1rem; /* half root vertical, full root horizontal padding */
 }
 
 nav .nav-link:hover {
