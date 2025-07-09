@@ -1,19 +1,23 @@
-/* Target anchor elements containing a hyperlink */
+/* styles/13-style.css
+   Link styles:
+   - Targets only anchors with href attribute
+   - Italicizes visited links
+   - Underlines on hover
+   - Changes background color on active state
+*/
+
 a[href] {
   color: inherit;
 }
 
-/* Visited state */
 a[href]:visited {
   font-style: italic;
 }
 
-/* Hover state */
 a[href]:hover {
   text-decoration: underline;
 }
 
-/* Active state */
 a[href]:active {
   background-color: var(--color-light-grey);
 }
