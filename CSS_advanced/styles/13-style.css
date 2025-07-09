@@ -1,22 +1,22 @@
-/* Normalize CSS v8.0.1 | MIT License | github.com/necolas/normalize.css */
-/* ... you can add normalize.css content here or import it as needed ... */
+/* styles/13-style.css
+   - Target anchor elements with href attribute only
+   - Style visited links to italicize text
+   - Underline links on hover
+   - Set background color on active state
+*/
 
-/* Anchor elements with href attribute */
 a[href] {
   color: inherit;
 }
 
-/* Visited links - italic text */
 a[href]:visited {
   font-style: italic;
 }
 
-/* Hover links - underline text */
 a[href]:hover {
   text-decoration: underline;
 }
 
-/* Active links - background color */
 a[href]:active {
   background-color: var(--color-light-grey);
 }
